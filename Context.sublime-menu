@@ -1,10 +1,10 @@
 [
+	{ "caption": "-" },
 	{
 		"id": "minifymenu",
 		"caption": "Minify",
 		"children":
 		[
-			{ "caption": "-" },
 			{
 				"id": "minifyfile",
 				"caption": "Minify File",
