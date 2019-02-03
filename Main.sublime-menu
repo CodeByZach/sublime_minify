@@ -15,8 +15,16 @@
 						"caption": "Minify",
 						"children":
 						[
-							{ "id": "minifyfile", "caption": "Minify File", "command": "minify" },
-							{ "id": "beautifyfile", "caption": "Beautify File", "command": "beautify" }
+							{
+								"id": "minifyfile",
+								"caption": "Minify File",
+								"command": "minify"
+							},
+							{
+								"id": "beautifyfile",
+								"caption": "Beautify File",
+								"command": "beautify"
+							}
 						]
 					}
 				]
@@ -41,18 +49,39 @@
 						[
 							{
 								"caption": "Settings",
-								"command": "edit_settings", "args": {
+								"command": "edit_settings",
+								"args":
+								{
 									"base_file": "${packages}/Minify/Minify.sublime-settings",
 									"default": "{\n$0\n}\n"
+								}
+							},
+							{
+								"caption": "Key Bindings",
+								"command": "edit_settings",
+								"args":
+								{
+									"base_file": "${packages}/Minify/Default.sublime-keymap",
+									"user_file": "${packages}/User/Default (${platform}).sublime-keymap",
+									"default": "[\n$0\n]\n"
+								}
+							},
+							{ "caption": "-" },
+							{
+								"caption": "Context Menu",
+								"command": "minify_edit_settings",
+								"args":
+								{
+									"base_file": "${packages}/Minify/Context.sublime-menu",
+									"user_file": "${packages}/User/Minify/Context.sublime-menu",
+									"default": "[\n$0\n]\n"
 								}
 							},
 							{ "caption": "-" },
 							{
 								"caption": "README",
-								"command": "open_file", "args":
-								{
-									"file": "${packages}/Minify/README.md"
-								}
+								"command": "open_file",
+								"args": { "file": "${packages}/Minify/README.md" }
 							}
 						]
 					}

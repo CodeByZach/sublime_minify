@@ -131,4 +131,4 @@ in the project's .sublime-project file containing your [project specific setting
 
 ##License
 
-See [LICENSE.md](https://github.com/tssajo/Minify/blob/master/LICENSE.md) file for licensing information.
+See [LICENSE.md](https://github.com/EatBreatheCode/sublime_minify/blob/master/LICENSE.md) file for licensing information.

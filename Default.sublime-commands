@@ -1,22 +1,19 @@
-[{
-  "caption": "Minify::Minify File",
-  "command": "minify"
-},
-{
-  "caption": "Beautify::Beautify File",
-  "command": "beautify"
-},
-{
-  "caption": "Minify::Default File Settings",
-  "command": "open_file",
-  "args": {
-    "file": "${packages}/Minify/Minify.sublime-settings"
-  }
-},
-{
-  "caption": "Minify::User File Settings",
-  "command": "open_file",
-  "args": {
-    "file": "${packages}/User/Minify.sublime-settings"
-  }
-}]
+[
+	{
+		"caption": "Minify: Minify File",
+		"command": "minify"
+	},
+	{
+		"caption": "Beautify: Beautify File",
+		"command": "beautify"
+	},
+	{
+		"caption": "Minify: Settings",
+		"command": "edit_settings",
+		"args":
+		{
+			"base_file": "${packages}/Minify/Minify.sublime-settings",
+			"default": "{\n$0\n}\n"
+		}
+	}
+]
