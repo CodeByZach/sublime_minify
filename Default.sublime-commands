@@ -1,3 +1,5 @@
+// <> NOTICE <>
+// Any changes made here could be overwritten when this program is updated.
 [
 	{
 		"caption": "Minify: Minify File",
@@ -9,11 +11,12 @@
 	},
 	{
 		"caption": "Minify: Settings",
-		"command": "edit_settings",
+		"command": "z_edit_settings",
 		"args":
 		{
 			"base_file": "${packages}/Minify/Minify.sublime-settings",
-			"default": "{\n$0\n}\n"
+			"user_file": "${packages}/User/Minify/Minify.sublime-settings",
+			"default": "{\n\t$0\n}\n"
 		}
 	}
 ]

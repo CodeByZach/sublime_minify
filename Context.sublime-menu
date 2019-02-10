@@ -1,5 +1,7 @@
+// <> NOTICE <>
+// Any changes made here could be overwritten when this program is updated.
 [
-	{ "caption": "-" },
+	{ "caption": "-", "id": "minifymenu-divider" },
 	{
 		"id": "minifymenu",
 		"caption": "Minify",
