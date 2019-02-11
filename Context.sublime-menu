@@ -3,7 +3,6 @@
 [
 	{ "caption": "-", "id": "export" },
 	{
-		"id": "minifymenu",
 		"caption": "Minify",
 		"children":
 		[
