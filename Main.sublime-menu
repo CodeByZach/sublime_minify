@@ -51,18 +51,17 @@
 						[
 							{
 								"caption": "Settings",
-								"command": "z_edit_settings",
+								"command": "edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/Minify/Minify.sublime-settings",
-									"user_file": "${packages}/User/Minify/Minify.sublime-settings",
 									"default": "{\n\t$0\n}\n"
 								}
 							},
 							{ "caption": "-" },
 							{
 								"caption": "Key Bindings",
-								"command": "z_edit_settings",
+								"command": "edit_settings",
 								"args":
 								{
 									"base_file": "${packages}/Minify/Default.sublime-keymap",

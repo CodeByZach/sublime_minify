@@ -1,7 +1,7 @@
 // <> NOTICE <>
 // Any changes made here could be overwritten when this program is updated.
 [
-	{ "caption": "-", "id": "minifymenu-divider" },
+	{ "caption": "-", "id": "export" },
 	{
 		"id": "minifymenu",
 		"caption": "Minify",
