@@ -131,4 +131,4 @@ in the project's .sublime-project file containing your [project specific setting
 
 ## License
 
-See the [LICENSE](LICENSE.md) file for licensing information.
+See the [LICENSE](LICENSE) file for licensing information.
