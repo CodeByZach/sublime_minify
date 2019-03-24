@@ -72,7 +72,7 @@ dependencies are provided below.
   You may want to do this test for all Node.js CLI apps (`cleancss`, `uglifycss`, `js-beautify`, `html-minifier`,
   `uglifyjs`, `minjson` and `svgo`).<br><br>
 
-##How to use `Minify`
+## How to use `Minify`
 
 Open a `.css` or `.htm` or `.html` or `.js` or `.json` or `.svg` file in your Sublime Text editor and you can
 
@@ -111,7 +111,7 @@ Please do not edit the **Settings - Default** file!!
 Also, you can override the default and user settings for individual projects. Just add a "Minify" object to the "settings" object
 in the project's .sublime-project file containing your [project specific settings](http://www.sublimetext.com/docs/3/projects.html).
 
-###Example:
+### Example:
 
 ```json
 {
@@ -129,6 +129,6 @@ in the project's .sublime-project file containing your [project specific setting
 }
 ```
 
-##License
+## License
 
-See [LICENSE.md](https://github.com/tssajo/Minify/blob/master/LICENSE.md) file for licensing information.
+See the [LICENSE](LICENSE) file for licensing information.

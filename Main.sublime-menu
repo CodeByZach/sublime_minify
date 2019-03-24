@@ -1,43 +1,141 @@
-[{
-	"caption": "Tools",
-	"mnemonic": "T",
-	"id": "tools",
-	"children": [{
-		"id": "minifymenu",
-		"caption": "Minify",
-		"children": [
-			{ "id": "minifyfile", "caption": "Minify File", "command": "minify" },
-			{ "id": "beautifyfile", "caption": "Beautify File", "command": "beautify" }
+// <> NOTICE <>
+// Any changes made here could be overwritten when this program is updated.
+[
+	{
+		"caption": "Tools",
+		"mnemonic": "T",
+		"id": "tools",
+		"children":
+		[
+			{
+				"id": "packages",
+				"caption": "Packages",
+				"children":
+				[
+					{
+						"id": "minifymenu",
+						"caption": "Minify",
+						"children":
+						[
+							{
+								"id": "minifyfile",
+								"caption": "Minify File",
+								"command": "minify"
+							},
+							{
+								"id": "beautifyfile",
+								"caption": "Beautify File",
+								"command": "beautify"
+							}
+						]
+					}
+				]
+			}
 		]
-	}]
-},
-{
-	"caption": "Preferences",
-	"mnemonic": "n",
-	"id": "preferences",
-	"children":[{
-		"caption": "Package Settings",
-		"mnemonic": "P",
-		"id": "package-settings",
-		"children":[{
-			"caption": "Minify",
-			"children": [{
-				"command": "open_file",
-				"args": {
-					"file": "${packages}/Minify/Minify.sublime-settings"
-				},
-				"caption": "Settings – Default"
-			},
+	},
+	{
+		"caption": "Preferences",
+		"mnemonic": "n",
+		"id": "preferences",
+		"children":
+		[
 			{
-				"command": "open_file",
-				"args": {
-					"file": "${packages}/User/Minify.sublime-settings"
-				},
-				"caption": "Settings – User"
-			},
-			{
-				"caption": "-"
-			}]
-		}]
-	}]
-}]
+				"caption": "Package Settings",
+				"mnemonic": "P",
+				"id": "package-settings",
+				"children":
+				[
+					{
+						"caption": "Minify",
+						"children":
+						[
+							{
+								"caption": "Settings",
+								"command": "edit_settings",
+								"args":
+								{
+									"base_file": "${packages}/Minify/Minify.sublime-settings",
+									"default": "{\n\t$0\n}\n"
+								}
+							},
+							{ "caption": "-" },
+							{
+								"caption": "Key Bindings",
+								"command": "edit_settings",
+								"args":
+								{
+									"base_file": "${packages}/Minify/Default.sublime-keymap",
+									"user_file": "${packages}/User/Default (${platform}).sublime-keymap",
+									"default": "[\n\t$0\n]\n"
+								}
+							},
+							{ "caption": "-" },
+							{
+								"caption": "Menus",
+								"children":
+								[
+									{
+										"caption": "Context Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"is_parent_setting": "1",
+											"base_file": "${packages}/Minify/Context.sublime-menu",
+											"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Side Bar Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"is_parent_setting": "1",
+											"base_file": "${packages}/Minify/Side Bar.sublime-menu",
+											"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Tab Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"is_parent_setting": "1",
+											"base_file": "${packages}/Minify/Tab Context.sublime-menu",
+											"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+										}
+									},
+									{
+										"caption": "Main Menu",
+										"command": "z_edit_settings",
+										"args":
+										{
+											"is_parent_setting": "1",
+											"base_file": "${packages}/Minify/Main.sublime-menu",
+											"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+										}
+									}
+								]
+							},
+							{
+								"caption": "Commands",
+								"command": "z_edit_settings",
+								"args":
+								{
+									"is_parent_setting": "1",
+									"base_file": "${packages}/Minify/Default.sublime-commands",
+									"default": "// <> NOTICE <>\n// Any changes made here could be overwritten when this program is updated.\n[\n\t$0\n]\n"
+								}
+							},
+							{ "caption": "-" },
+							{
+								"caption": "README",
+								"command": "open_file",
+								"args": { "file": "${packages}/Minify/README.md" }
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
