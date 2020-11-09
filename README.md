@@ -1,5 +1,5 @@
 # `Minify` for Sublime Text
-[![Latest Release](https://img.shields.io/github/tag/EatBreatheCode/sublime_minify.svg?label=version)](https://github.com/EatBreatheCode/sublime_minify/releases)
+[![Latest Release](https://img.shields.io/github/tag/CodeByZach/sublime_minify.svg?label=version)](https://github.com/CodeByZach/sublime_minify/releases)
 
 ## What is `Minify`
 
