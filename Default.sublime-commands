@@ -1,14 +1,8 @@
 // <> NOTICE <>
 // Any changes made here could be overwritten when this program is updated.
 [
-	{
-		"caption": "Minify: Minify File",
-		"command": "minify"
-	},
-	{
-		"caption": "Beautify: Beautify File",
-		"command": "beautify"
-	},
+	{ "caption": "Minify: Minify File",     "command": "minify" },
+	{ "caption": "Beautify: Beautify File", "command": "beautify" },
 	{
 		"caption": "Minify: Settings",
 		"command": "edit_settings",
