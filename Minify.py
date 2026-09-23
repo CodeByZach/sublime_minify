@@ -248,7 +248,7 @@ class RunAfterSave(ThreadHandling, MinifyClass, sublime_plugin.EventListener):
 				if 'svg' in self.get_setting('allowed_file_types'):
 					searchFName += 'svg|'
 				searchFNameRegEx = r'\.(?:' + searchFName.rstrip('|') + ')$'
-				searchSyntaxRegEx = r'/(?:' + searchSyntax.rstrip('|') + ')\.tmLanguage$'
+				searchSyntaxRegEx = r'/(?:' + searchSyntax.rstrip('|') + r')\.tmLanguage$'
 				if re.search(searchFNameRegEx, filename) or (re.search(r'(\.[^\.]+)$', filename) and re.search(searchSyntaxRegEx, syntax)):
 					if re.search(r'\.min\.[^\.]+$', filename):
 						if self.get_setting('debug_mode'):
